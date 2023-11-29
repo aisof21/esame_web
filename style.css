@@ -643,8 +643,6 @@ input{
 .titolo_s h2{
     margin: 0px;
     font-size: 96px;
-    font-family: 'Bakso Sapi';
-    
 }
 .cardstoria {
     margin-top: 100px;
@@ -683,7 +681,7 @@ input{
     font-size: 14px;
 }
 .titolo_s h2{
-    font-size: 57px;
+    font-size: 40px;
 }
 .titolo_s h6{
     font-size: 14px;
