@@ -618,9 +618,11 @@ input{
     list-style: none;
     font-family: 'poppins';
     color: #000;
+    padding-right: 0px;
     padding-bottom: 20px;
     padding-top: 0;
     border-bottom: 2px solid black;
+    font-size: 25px;
 }
 .microargomenti li :hover{
     color:#D52941;  
