@@ -79,19 +79,19 @@ a{
     }
 
 
-/* Media query per schermi più piccoli */
+
 @media screen and (max-width: 1002px) {
     .menu-icon {
-        display: block; /* Mostra l'icona del menu */
-        font-size: 30px; /* Imposta la dimensione dell'icona del menu */
+        display: block; 
+        font-size: 30px;
         cursor: pointer;
     }
 
     .nav ul {
-        display: none; /* Nascondi la lista di navigazione */
-        flex-direction: column; /* Rendi i link uno sopra l'altro */
+        display: none; 
+        flex-direction: column;
         position: absolute;
-        top: 60px; /* Regola la distanza dalla parte superiore */
+        top: 60px; 
         left: 0;
         width: 100%;
         background-color: #f9f9f9;
@@ -103,11 +103,11 @@ a{
     }
 
     .nav a {
-        font-size: 20px; /* Imposta la dimensione del testo nel menu */
-        padding: 15px; /* Aggiungi spaziatura intorno ai link */
-        text-align: center; /* Centra il testo nel link */
+        font-size: 20px; 
+        padding: 15px; 
+        text-align: center; 
         text-decoration: none;
-        transition: background-color 0.3s; /* Aggiungi un effetto di transizione */
+        transition: background-color 0.3s; 
     }
     .storia{
         color: #D52941;
@@ -124,7 +124,7 @@ a{
         
   
     .nav a:hover {
-        background-color: #ddd; /* Cambia il colore di sfondo al passaggio del mouse */
+        background-color: #ddd; 
     }
 }
 
@@ -208,7 +208,7 @@ a{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     overflow: hidden;
-    width: 100%; /* Puoi regolare la larghezza della card secondo le tue preferenze */
+    width: 100%; 
 }
 .card img {
     padding: 60px;
@@ -233,7 +233,7 @@ a{
 }
   
 .arrow-button:hover {
-    background-color: #FF6BAC; /* Cambia colore al passaggio del mouse */
+    background-color: #FF6BAC;
 }
   
 .arrow-button span {
@@ -243,14 +243,14 @@ a{
 
     @media (max-width: 1002px) {
         .card {
-            flex-direction: column; /* Cambia la direzione a colonna per schermi più piccoli */
+            flex-direction: column;
             align-items: center;
         }
     
         .card img {
             padding-bottom: 0px;
-            width: 100%; /* Larghezza completa dell'immagine */
-            order: -1; /* Sposta l'immagine sopra il contenuto testuale */
+            width: 100%; 
+            order: -1;
         }
     
         .card-content {
@@ -260,7 +260,7 @@ a{
         }
     
         .arrow-button {
-            margin-top: 20px; /* Aggiungi margine superiore per spaziare l'arrow-button dal testo */
+            margin-top: 20px;
         }
     }
 
@@ -286,16 +286,16 @@ a{
 }
 
 .card1 {
-    flex: 0 0 calc(100% / 3); /* Calcola la larghezza dinamica per visualizzare 3 card senza margini */
+    flex: 0 0 calc(100% / 3); 
     background-color: #fff;
-    padding: 20px; /* Ridotto il padding della card */
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 3px solid black;
 }
 
 .card1 img {
     border: 3px solid black;
-    width: 100%; /* Fai occupare all'immagine l'intera larghezza della card */
+    width: 100%; 
     height: auto;
 }
 .card1 h2{
@@ -340,8 +340,6 @@ flex-wrap: wrap;
  #carousel-indicators {
      display: none;
 }
-    
-/* Resto del CSS rimane invariato */
 .argomento2 {
     margin-top: 80px;
     font-family: 'Bakso Sapi';
@@ -609,7 +607,7 @@ input{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Cambia il colore e l'opacità come desideri */
+  background-color: rgba(0, 0, 0, 0.7); 
 }
 .microargomenti ul{
     text-decoration: none;
@@ -688,7 +686,7 @@ input{
 .cardstoria {
     margin-top: 100px;
     display: flex;
-    flex-direction: column; /* Cambia la direzione del layout a colonna */
+    flex-direction: column; 
     gap: 30px;
 }
 
@@ -696,7 +694,7 @@ input{
     box-sizing: border-box;
     border: 2px solid black;
     padding: 10px;
-    max-width: 100%; /* Occupa l'intero spazio disponibile */
+    max-width: 100%;
 }
 
 .card_s img {
@@ -727,7 +725,7 @@ input{
 .container_e img{
     width: 70%;
     height:70%;
-    object-fit:contain; /* per adattare l'immagine senza distorsioni */
+    object-fit:contain; 
 
 }
 .container_e h1{
