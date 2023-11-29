@@ -674,7 +674,7 @@ input{
 
 @media (max-width: 768px) {
 .microargomenti ul{
-    gap: 30px;
+    gap: 15px;
     font-size: 14px;
 }
 .titolo_s h2{
