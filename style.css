@@ -674,7 +674,7 @@ input{
 
 @media (max-width: 768px) {
 .microargomenti ul{
-    margin-left: 10px;
+    margin-right: 10px;
     gap: 15px;
     font-size: 14px;
 }
