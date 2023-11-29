@@ -768,7 +768,12 @@ input{
     color:#A4C407;
 }
 @media (max-width: 768px) {
-    .paragrafo_e {
+ .container_e h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+}   
+.paragrafo_e {
         font-family: 'poppins';
         margin-top: 20px;
         margin-bottom: 20px;
@@ -776,7 +781,7 @@ input{
         align-items: center;
         justify-content: center;
         height: auto;
-    }
+}
     .testo_e h2 {
         font-size: 18;
     }
