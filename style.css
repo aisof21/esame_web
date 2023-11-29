@@ -904,7 +904,7 @@ margin-bottom: 20px;
     margin:0;
     font-family: 'poppins';
     font-size: 30px;
-   font-weight: 350;
+   font-weight: 400;
 }
 .testo_n p{
     background-color: #000;
@@ -930,10 +930,10 @@ margin-bottom: 20px;
     margin:0;
     font-family: 'poppins';
     font-size: 25px;
-    font-weight: 350;
+    font-weight: 400;
 }
 .testo_n p{
-    width: 35%;
+    width: 40%;
     font-size: 15px;
 }
 }
