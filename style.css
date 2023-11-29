@@ -855,6 +855,25 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+@media (max-width: 768px) {
+  .testo_i h2{
+    font-size: 30px;
+    width: 100%;
+  }
+  .testo_i h6{
+    width: 100%;
+    font-size: 15px;
+    font-weight:400;
+}
+.campo{
+    width: 100%;
+    font-size: 20px;
+}
+.campo h2{
+    margin-top: 40px;
+    font-size: 20px;
+}
+}
 /* NEWSLETTER */
 .popup{
     width: 100%;
