@@ -1554,7 +1554,9 @@ input{
     font-weight: 400;
 }
 .testo_n p{
-    width: 35%;
+    width: 40%;
+    height:60%
+    
     font-size: 15px;
 }
 }
