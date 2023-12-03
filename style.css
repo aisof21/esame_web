@@ -469,8 +469,8 @@ flex-wrap: wrap;
 @media (max-width: 1002px) {
     .citazione {
         margin-top: 50px;
-        font-size: 15px;
-        padding: 40px;
+        font-size: 12px;
+        padding: 20px;
     }
 
 }
