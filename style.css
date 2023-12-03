@@ -1,4 +1,3 @@
-
 body{
     margin-left: 80px;
     margin-right: 80px;
@@ -8,7 +7,9 @@ a{
     color: black;
 
 }
-
+main{
+    max-width: 1300;
+}
 *{
     box-sizing: border-box;
 }
@@ -31,6 +32,8 @@ a{
     }
     .marchio{
        text-align: center;
+       margin-top: 10px;
+       margin-bottom: 10px;
     }
     .navigation{ 
         text-align: center;
@@ -63,14 +66,26 @@ a{
     .storia{
     color: #D52941;
     }
+    .storia:hover {
+        color: #740312;
+        }
     .lotte{
         color: #9A23E2;
+    }
+    .lotte:hover {
+        color: #59068c;
     }
     .donne{
         color: #FF6BAC;
     }
+    .donne:hover {
+        color: #8e013e;
+    }
     .about{
         color: black;
+    }
+    .about:hover {
+        color: rgb(112, 57, 57);
     }
     
     .marchio{ 
@@ -78,24 +93,23 @@ a{
         justify-content: center;
     }
 
-
-
 @media screen and (max-width: 1002px) {
     .menu-icon {
-        display: block; 
-        font-size: 30px;
+        display: block;
+        font-size: 30px; 
         cursor: pointer;
     }
 
     .nav ul {
         display: none; 
-        flex-direction: column;
+        flex-direction: column; 
         position: absolute;
-        top: 60px; 
         left: 0;
         width: 100%;
         background-color: #f9f9f9;
         border: 1px solid #ddd;
+        z-index: 10;
+        gap:0;
     }
 
     .nav ul.show {
@@ -108,23 +122,22 @@ a{
         text-align: center; 
         text-decoration: none;
         transition: background-color 0.3s; 
-    }
-    .storia{
-        color: #D52941;
-        }
-        .lotte{
-            color: #9A23E2;
-        }
-        .donne{
-            color: #FF6BAC;
-        }
-        .about{
-            color: black;
-        }
+}        
+.storia{
+color: #D52941;
+}
+.lotte{
+color: #9A23E2;
+}
+.donne{
+     color: #FF6BAC;
+}
+.about{
+    color: black;
+}
         
-  
-    .nav a:hover {
-        background-color: #ddd; 
+.nav a:hover {
+    background-color: #ddd; /
     }
 }
 
@@ -187,8 +200,6 @@ a{
     }
 }
 
-
-
 /*contenuto home*/
 .argomento1{
     font-family:'Bakso Sapi';
@@ -233,7 +244,7 @@ a{
 }
   
 .arrow-button:hover {
-    background-color: #FF6BAC;
+    background-color: #FF6BAC; 
 }
   
 .arrow-button span {
@@ -241,28 +252,28 @@ a{
 }
 
 
-    @media (max-width: 1002px) {
-        .card {
-            flex-direction: column;
-            align-items: center;
-        }
+@media (max-width: 1002px) {
+.card {
+    flex-direction: column; 
+    align-items: center;
+}
     
-        .card img {
-            padding-bottom: 0px;
-            width: 100%; 
-            order: -1;
-        }
+.card img {
+    padding-bottom: 0px;
+    width: 100%; 
+    order: -1; 
+}
     
-        .card-content {
-            margin-left: 40px;
-            font-size: 26px; 
-            padding-bottom: 50px;
-        }
+.card-content {
+    margin-left: 40px;
+    font-size: 26px; 
+    padding-bottom: 50px;
+}
     
-        .arrow-button {
-            margin-top: 20px;
-        }
-    }
+.arrow-button {
+     margin-top: 20px; 
+}
+}
 
 
 .argomento2{
@@ -288,14 +299,14 @@ a{
 .card1 {
     flex: 0 0 calc(100% / 3); 
     background-color: #fff;
-    padding: 20px;
+    padding: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 3px solid black;
 }
 
 .card1 img {
     border: 3px solid black;
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 .card1 h2{
@@ -340,6 +351,8 @@ flex-wrap: wrap;
  #carousel-indicators {
      display: none;
 }
+    
+
 .argomento2 {
     margin-top: 80px;
     font-family: 'Bakso Sapi';
@@ -394,13 +407,15 @@ flex-wrap: wrap;
 .argomentod .secondo{
     background-color: #FF6BAC;
     text-align: center;
-    width: 25%;
+    width: 20%;
     border: 3px solid black;
     border-radius: 30px;
     margin: 0;
     font-family: 'poppins';
     font-size: 23px;
     color: black;  
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .argomentod .terzo{
     font-family: 'poppins';
@@ -422,7 +437,7 @@ flex-wrap: wrap;
     .argomentod .secondo{
         background-color: #FF6BAC;
         text-align: center;
-        width: 30%;
+        width: 25%;
         border: 3px solid black;
         border-radius: 30px;
         margin: 0;
@@ -467,8 +482,10 @@ border-bottom: 2px solid black;
 border-top:2px solid black;
 display: flex;
 align-items: center;
-gap: 100px;
+gap: 30px;
+justify-content: space-between;
 }
+
 .newsletter-container{
 display: column;
 }
@@ -517,12 +534,14 @@ input{
     
 }
 .navfooter li{
+ list-style-type:none ;
+ font-family: 'poppins';
+ font-size: 20px;
+ font-weight: bold;
+}
+.navfooter ul{
     display: flex;
-    align-items: center; 
-    justify-content: flex-end;
-    font-family: 'poppins';
-    font-weight: bold;
-    font-size: 20px;
+    flex-direction: column;
 }
 
 
@@ -543,13 +562,14 @@ input{
   }
   .newsletter-container a img{
 
-    width: 320px;
+    width: 250px;
   }
   .newsletter h2{
     display: flex;
     justify-content: center;
   }
   .contatti{
+    font-size: 12px;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -567,10 +587,10 @@ input{
     justify-content: center;
     font-family: 'poppins';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 .newsletter h2{
-   font-size: 18px;
+   font-size: 15px;
 }
 }
 
@@ -578,7 +598,6 @@ input{
  /* STORIA [hero] */
  .containerstoria{
     height: 65vh;
-    border: 1px solid red;
     margin-top: 20px;
     position: relative;
     text-align: center;
@@ -614,18 +633,24 @@ input{
     justify-content: center;
     display: flex;
     align-items:center ;
-    gap: 150px;
+    gap: 50px;
     list-style: none;
     font-family: 'poppins';
-    color: #000;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 20px;
     padding-top: 0;
     border-bottom: 2px solid black;
     font-size: 20px;
 }
+.microargomenti li{
+    margin: 0;
+    padding: 16. 0px;
+}
 .microargomenti li :hover{
-    color:#D52941;  
+    color:#000000;  
+}
+.microargomenti li a{
+    color:#D52941;
 }
 .titolo_s{
     margin-top: 40px;
@@ -674,14 +699,19 @@ input{
 }
 
 
-@media (max-width: 768px) {
-    .overlay-text {
-    font-size: 70px;
-  }
+@media (max-width: 1002px) {
 .microargomenti ul{
-    margin-right: 10px;
-    gap: 15px;
-    font-size: 14px;
+  font-size: 15px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.microargomenti li{
+    margin: 0;
+    padding: 16. 0px;
 }
 .titolo_s h2{
     font-size: 40px;
@@ -700,7 +730,7 @@ input{
     box-sizing: border-box;
     border: 2px solid black;
     padding: 10px;
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 .card_s img {
@@ -718,6 +748,7 @@ input{
     font-family: 'poppins';
     margin: 0;
 }
+
 }
 
 /* EMANCIPAZIONE */
@@ -759,6 +790,7 @@ input{
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 .testo_e h3 {
@@ -769,17 +801,35 @@ input{
     font-weight: 500;
     line-height: normal;
 }
-
+.testo_e h4{
+    margin-top: 0;
+    font-size: 20px;
+}
 .testoverde {
     color:#A4C407;
 }
-@media (max-width: 768px) {
- .container_e h1{
+.testogiallo{
+    color:#FAB818;  
+}
+.testorosa{
+    color: #FF6BAC;
+}
+.testoviola{
+    color: #9A23E2;
+}
+.testoarancione{
+    color: #FF7152;
+}
+.testorosso{
+    color:#D52941 ;
+}
+@media (max-width: 1002px){
+    .container_e h1{
         margin: 0;
         font-size: 40px;
         font-family: 'poppins';
-}   
-.paragrafo_e {
+    }
+    .paragrafo_e {
         font-family: 'poppins';
         margin-top: 20px;
         margin-bottom: 20px;
@@ -787,7 +837,7 @@ input{
         align-items: center;
         justify-content: center;
         height: auto;
-}
+    }
     .testo_e h2 {
         font-size: 18;
     }
@@ -795,6 +845,577 @@ input{
         font-size: 20px;
     }
 }
+
+/*DIRITTO AL LAVORO*/
+.container_lavoro{
+    margin-top: 20px;
+    background-color: #FFD97D;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_lavoro img{
+    width: 70%;
+    height:70%;
+    object-fit:contain; 
+
+}
+.container_lavoro h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_lavoro h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+
+/*LOTTA ATTUALE*/
+.container_a{
+    margin-top: 20px;
+    background-color: #FFAED2;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_a img{
+    width: 70%;
+    height:70%;
+    object-fit:contain;
+
+}
+.container_a h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_a h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+
+/* LOTTE*/
+.containerlotte{
+    height: 65vh;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+ }
+.overlay-text-l {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9A23E2;
+    font-family: 'poppins';
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+.containerlotte img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color:0 ;
+}
+.microargomenti_l ul{
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items:center ;
+    gap: 50px;
+    list-style: none;
+    font-family: 'poppins';
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-top: 0;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+.microargomenti_l li :hover{
+    color:#000000;  
+}
+.microargomenti_l li a{
+  color: #9A23E2;
+}
+.cardlotte {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+.card_l {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px;
+}
+    
+.card_l img {
+    max-width: 100%;
+    height: auto;
+}
+    
+.card_l h5 {
+    font-size: 20px;
+    font-family: 'Bakso Sapi';
+    margin: 10px 0;
+}
+    
+.card_l p {
+    font-family: 'poppins';
+     margin: 0;
+}
+@media (max-width: 1002px) {
+.microargomenti_l ul{
+        font-size: 15px;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        gap: 0;
+}
+.microargomenti_l li{
+    margin: 0;
+    padding: 16. 0px;
+}
+.cardlotte {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+      
+.card_l {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 100%;
+}
+.card_l img {
+    max-width: 100%;
+    height: auto;
+}
+.card_l h5 {
+    font-size: 20px;
+    font-family: 'Bakso Sapi';
+    margin: 10px 0;
+}
+.card_l p {
+    font-family: 'poppins';
+    margin: 0;
+      } 
+}
+/*SUFFRAGETTE*/
+.container_s{
+    margin-top: 20px;
+    background-color:#D093F5;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_s img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_s h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_s h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*LOTTA ECONOMICA*/
+.container_eco{
+    margin-top: 20px;
+    background-color:#FF7152;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_eco img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_eco h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_eco h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*DIRITTI RIPRODUTTIVI*/
+.container_riproduttivi{
+    margin-top: 20px;
+    background-color:#FFAFCC;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_riproduttivi img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_riproduttivi h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_riproduttivi h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*DIRITTI RIPRODUTTIVI*/
+.container_p{
+    margin-top: 20px;
+    background-color:#DDE5B6;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_p img{
+    width: 70%;
+    height:70%;
+    object-fit:contain; 
+
+}
+.container_p h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_p h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*VIOLENZE DI GENERE*/
+.container_v{
+    margin-top: 20px;
+    background-color:#D52941;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_v img{
+    width: 70%;
+    height:70%;
+    object-fit:contain; 
+
+}
+.container_v h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_v h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*VIOLENZE DI GENERE*/
+.container_i{
+    margin-top: 20px;
+    background-color:#FFD97D;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_i img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_i h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_i h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+
+
+
+
+/* DONNE */
+.containerdonne{
+    height: 65vh;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+ }
+.overlay-text-d {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#FF6BAC;
+    font-family: 'poppins';
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.containerdonne img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color:0 ;
+}
+.microargomenti_d ul{
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items:center ;
+    gap: 50px;
+    list-style: none;
+    font-family: 'poppins';
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-top: 0;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+.microargomenti_d li :hover{
+    color:#000000;  
+}
+.microargomenti_d li a{
+  color:#FF6BAC;
+}
+@media (max-width: 1002px) {
+    .microargomenti_d ul{
+            font-size: 15px;
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            flex-direction: column;
+            gap: 0;
+    }
+    .microargomenti_d li{
+        margin: 0;
+        padding: 16. 0px;
+    }
+    .carddonne {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column; 
+        gap: 30px;
+    }
+          
+    .card_d {
+        box-sizing: border-box;
+        border: 2px solid black;
+        padding: 10px;
+        max-width: 100%; 
+    }
+    .card_d img {
+        max-width: 100%;
+        height: auto;
+    }
+    .card_d h5 {
+        font-size: 20px;
+        font-family: 'Bakso Sapi';
+        margin: 10px 0;
+    }
+    .card_d p {
+        font-family: 'poppins';
+        margin: 0;
+          } 
+    }
+
+    /*FRIDA KHALO*/
+.container_f{
+    margin-top: 20px;
+    background-color:#D52941;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_f img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_f h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_f h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}
+/*COCO CHANEL*/
+    .container_coco{
+        margin-top: 20px;
+        background-color:#9A23E2;
+        height: 65vh;
+        position: relative;
+        text-align: center;
+    }
+    .container_coco img{
+        width: 80%;
+        height:80%;
+        object-fit:contain; 
+    
+    }
+    .container_coco h1{
+        margin: 0;
+        font-size: 60px;
+        font-family: 'poppins';
+    }
+    @media (max-width: 1002px){
+        .container_coco h1{
+            margin: 0;
+            font-size: 40px;
+            font-family: 'poppins';
+        }
+    }
+/*YOKO ONO*/
+.container_yoko{
+    margin-top: 20px;
+    background-color:#FFD97D;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_yoko img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_yoko h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_yoko h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}    
+/*EVITA PERON*/
+.container_evita{
+    margin-top: 20px;
+    background-color:#DDE5B6;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_evita img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_evita h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_evita h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+}  
+/*MADONNA*/
+.container_mado{
+    margin-top: 20px;
+    background-color:#FFAED2;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_mado img{
+    width: 80%;
+    height:80%;
+    object-fit:contain;
+}
+.container_mado h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_mado h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+} 
+/*LADY DIANA*/
+.container_lady{
+    margin-top: 20px;
+    background-color:#FF7152;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+.container_lady img{
+    width: 80%;
+    height:80%;
+    object-fit:contain; 
+
+}
+.container_lady h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: 'poppins';
+}
+@media (max-width: 1002px){
+    .container_lady h1{
+        margin: 0;
+        font-size: 40px;
+        font-family: 'poppins';
+    }
+} 
 /* ISCRIVITI */
 .iscrizione{
     margin-top: 40px;
@@ -827,7 +1448,7 @@ input{
     margin-bottom: 0px;
     font-family: 'poppins';
     font-size: 30px;
-    font-weight: 350;  
+    font-weight: 400;  
     padding-bottom: 10px; 
     border-bottom: 4px solid black;
 }
@@ -840,14 +1461,6 @@ input{
     font-family: 'poppins';
     font-size: 25px;
 }
-.nickname{
-margin-bottom: 20px;
-}
-.nickname input{
-    background-color: #ffffff;
-    font-family: 'poppins';
-}
-
 .mail input{
     background-color:#ffffff;
     font-family: 'poppins';
@@ -864,7 +1477,7 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1002px) {
   .testo_i h2{
     font-size: 30px;
     width: 100%;
@@ -917,12 +1530,13 @@ margin-bottom: 20px;
     border-radius: 30px;
     width: 30%;
     font-family: 'poppins';
-    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #FF6BAC;
 }
-@media (max-width: 768px) {
+@media (max-width: 1002px) {
 .testo_n{
-    margin-top: 0px;
+    margin-top: 40px;
     width: 100%;
 }
 .testo_n h2{
@@ -936,7 +1550,69 @@ margin-bottom: 20px;
     font-weight: 400;
 }
 .testo_n p{
-    width: 40%;
+    width: 35%;
     font-size: 15px;
+}
+}
+/*ABOUT*/
+.about_totale{
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 30px;
+    display: flex;
+}
+.about_p {
+    margin-top: 80px;
+}
+.about_p h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.about_p h2 {
+    color: #000;
+    font-family: Bakso Sapi;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
+.about_p p {
+    width: 90%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.imgabout {
+    width: 50%;
+}
+@media (max-width: 1002px) {
+    .about_totale{
+        padding:10px ;
+        border: 4px solid black;
+        border-radius: 30px;
+        flex-wrap: wrap;
+}   
+.about_p h2 {
+    color: #000;
+    font-family: Bakso Sapi;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+.about_p p {
+    width: 100%;
+    font-size: 20px;
+}  
+.about_p {
+    margin-top: 40px;  
+}
+.imgabout {
+    width: 100%;    
+}
+.imgabout img {
+    width: 100%;
 }
 }
