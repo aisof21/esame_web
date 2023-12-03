@@ -1495,11 +1495,9 @@ input{
 }
 .campo h2{
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 15px;
 }
-.campo a h2{
-     padding:10px;
-}
+
 /* NEWSLETTER */
 .popup{
     width: 100%;
