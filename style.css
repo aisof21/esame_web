@@ -1494,10 +1494,11 @@ input{
     font-size: 20px;
 }
 .campo h2{
-    padding:10px;
     margin-top: 40px;
     font-size: 20px;
 }
+.campo a h2{
+     padding:10px;
 }
 /* NEWSLETTER */
 .popup{
