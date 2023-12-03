@@ -1483,6 +1483,7 @@ input{
     width: 100%;
   }
   .testo_i h6{
+      padding:5px;
     width: 100%;
     font-size: 15px;
     font-weight:400;
